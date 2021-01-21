@@ -11,7 +11,7 @@ public class HelloWorld {
 
 // TODO: Create a String variable named myString and assign a string value to it, then print the variable out to the console.
 
-        String myString = "I'm a Christ follower";
+        String myString = "Let's play Java!";
         System.out.println(myString);
 
 // TODO: Change your code to assign a character value to myString. What do you notice?
@@ -24,8 +24,8 @@ public class HelloWorld {
 
 // TODO: Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
 
-//         long myNumber; // says java: variable myNumber might not have been initialized
-//         System.out.println(myNumber);
+//        double myNumber; // says java: variable myNumber might not have been initialized
+////         System.out.println(myNumber);
 
 // TODO: Change your code to assign the value 3.14 to myNumber. What do you notice?
 
@@ -110,8 +110,10 @@ public class HelloWorld {
 
         // it will loop back around to the lowest integer of the variable
 
+        int bigNumber = Integer.MAX_VALUE;
+        System.out.println(++bigNumber);
 
-                }
+    }
 }
 
 
