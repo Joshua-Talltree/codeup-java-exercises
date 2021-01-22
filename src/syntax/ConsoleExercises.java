@@ -32,7 +32,7 @@ public class ConsoleExercises {
 
 // TODO: What happens if you input something that is not an integer?
 
-        // it throws an InputMismatchException
+        // it throws an InputMismatchException because of the fact that it was not a integer that was entered in.
 //
 // TODO: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline. What happens if you enter less than 3 words? What happens if you enter more than 3 words?
 
@@ -58,13 +58,25 @@ public class ConsoleExercises {
 
 // Calculate the perimeter and area of Codeup's classrooms.
 
-// TODO: Prompt the user to enter values of length and width of a classroom at Codeup.
+// TODO: Prompt the user to enter values of length and width of a classroom at Codeup. Use the nextLine method to get user input and parse the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width.
+
+//        System.out.print("Enter the length and width of the room here: ");
+//        String length = scanner.next();
+//        String width = scanner.next();
+//        String equals = scanner.next();
 
 
-//
-// TODO: Use the nextLine method to get user input and parse the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width.
+
+//        System.out.println("The result of the length is: " + length);
+//        System.out.println("The result of the width is: " + width);
 //
 // TODO: Display the area and perimeter of that classroom. The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+
+        System.out.print("Enter the length, the width, and area measurement here:");
+        String lengthWidthEquals = scanner.nextLine();
+
+        System.out.println("The area of the room is: " + lengthWidthEquals);
+        System.out.println("The perimeter of a room is: " + lengthWidthEquals);
 
 
     }
