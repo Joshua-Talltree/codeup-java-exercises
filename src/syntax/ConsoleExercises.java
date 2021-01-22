@@ -4,6 +4,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class ConsoleExercises {
+
     public static void main(String[] args) {
 
 // TODO: Copy this code into your main method:
@@ -29,23 +30,37 @@ public class ConsoleExercises {
         System.out.println("You entered: --> \"" + number + "\" <--");
 
 
-
 // TODO: What happens if you input something that is not an integer?
 
         // it throws an InputMismatchException
 //
 // TODO: Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline. What happens if you enter less than 3 words? What happens if you enter more than 3 words?
 
+        System.out.print("Please enter 3 words: ");
+        String word1 = scanner.next();
+        String word2 = scanner.next();
+        String word3 = scanner.next();
+
+        System.out.println("You entered this word: \"" + word1 + "\"");
+        System.out.println("this word: \"" + word2 + "\"");
+        System.out.println("and this word: \"" + word3 + "\"");
 
 
 //
 // TODO: Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user. do you capture all the words?
+
+        System.out.print("Please enter a sentence here: ");
+        String oneSentence = scanner.nextLine();
+
+        System.out.println("Your sentence: \"" + oneSentence + "\"");
 
 // TODO: Rewrite the above example using the nextLine method.
 
 // Calculate the perimeter and area of Codeup's classrooms.
 
 // TODO: Prompt the user to enter values of length and width of a classroom at Codeup.
+
+
 //
 // TODO: Use the nextLine method to get user input and parse the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width.
 //
