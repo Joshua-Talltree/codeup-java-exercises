@@ -59,27 +59,15 @@ public class ConsoleExercises {
 
 // Calculate the perimeter and area of Codeup's classrooms.
 
-// TODO: Prompt the user to enter values of length and width of a classroom at Codeup. Use the nextLine method to get user input and parse the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width.
+// TODO: Prompt the user to enter values of length and width of a classroom at Codeup. Use the nextLine method to get user input and parse the resulting string to a numeric type. Assume that the rooms are perfect rectangles. Assume that the user will enter valid numeric data for length and width. Display the area and perimeter of that classroom. The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
 
-//        System.out.print("Enter the length and width of the room here: ");
-//        String length = scanner.next();
-//        String width = scanner.next();
-//        String equals = scanner.next();
+        System.out.println("Enter the length of the room here: (12.5)");
+        double length = Double.parseDouble(scanner.nextLine());
+        System.out.println("Enter the width of the room here: (14.2)");
+        double width = Double.parseDouble(scanner.nextLine());
 
-
-
-//        System.out.println("The result of the length is: " + length);
-//        System.out.println("The result of the width is: " + width);
-//
-// TODO: Display the area and perimeter of that classroom. The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
-
-        System.out.print("Enter the length, the width, and area measurement here:");
-        System.out.print("Enter the length and width, multiplied by 2 here:");
-//        String lengthWidthEquals = scanner.nextLine();
-        String lengthTwoWidthTwoEquals = scanner.nextLine();
-
-//        System.out.println("The area of the room is: " + lengthWidthEquals);
-        System.out.println("The perimeter of a room is: " + lengthTwoWidthTwoEquals);
+        System.out.printf("Area of classroom: %.1f%n", length * width);
+        System.out.printf("Perimeter of classroom: %.1f%n", (2*length + 2*width));
 
 
     }
