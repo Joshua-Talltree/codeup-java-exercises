@@ -66,7 +66,7 @@ public class ConsoleExercises {
         System.out.println("Enter the width of the room here: (14.2)");
         double width = Double.parseDouble(scanner.nextLine());
 
-        System.out.printf("Area of classroom: %.1f%n", length * width);
+        System.out.printf("Area of classroom: %.1f%n", length * width); // %.number parses after the decimal and %n creates new line
         System.out.printf("Perimeter of classroom: %.1f%n", (2*length + 2*width));
 
 
