@@ -12,6 +12,7 @@ public class StringExercise {
         retResult = sc.nextLine();
 
         System.out.println(retResult);
+        // get results from input
 
     }
 }
