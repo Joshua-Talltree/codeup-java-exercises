@@ -8,18 +8,17 @@ public class Bob {
 
         Scanner sc = new Scanner(System.in);
 
-        String question = "?";
-        String exclaim = "!";
-        String empty = "";
-
         System.out.println("What do you have to say to me: ");
+        String question = sc.nextLine();
 
         if (question.endsWith("?")) {
             System.out.println("Sure");
-        } else if (exclaim.endsWith("!")) {
+        } else if (question.endsWith("!")) {
             System.out.println("Woah, chill out!");
-        } else if (empty.endsWith("")) {
+        } else if (question.endsWith("...")) {
             System.out.println("Fine, be that way");
+        } else {
+            System.out.println("Whatever");
         }
 
     }
