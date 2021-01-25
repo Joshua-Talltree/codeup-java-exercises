@@ -8,19 +8,23 @@ public class Bob {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("What do you have to say to me: ");
-        String question = sc.nextLine();
+        while(true) {
+            System.out.println("What do you have to say to Bob? (type exit if you want to finish this exec)");
+            String question = sc.nextLine().trim();
 
-        if (question.endsWith("?")) {
-            System.out.println("Sure");
-        } else if (question.endsWith("!")) {
-            System.out.println("Woah, chill out!");
-        } else if (question.endsWith("...")) {
-            System.out.println("Fine, be that way");
-        } else {
-            System.out.println("Whatever");
+            if (question.endsWith("?")) {
+                System.out.println("Sure");
+            } else if (question.endsWith("!")) {
+                System.out.println("Woah, chill out!");
+            } else if (question.isEmpty()) {
+                System.out.println("Fine, be that way!");
+            } else if (question.toLowerCase().equals("exit")) {
+                System.out.println("Good bye!");
+                break;
+            } else {
+                System.out.println("Whatever");
+            }
         }
-
     }
 }
 
