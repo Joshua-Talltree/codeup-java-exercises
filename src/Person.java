@@ -16,6 +16,10 @@ class Person {
         this.name = name;
     }
 
+    public String toString() {
+        return name;
+    }
+
     public void sayHello() {
 //TODO: print a message to the console using the person's name
         System.out.println("Hello " + this.name + "!");

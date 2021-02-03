@@ -19,6 +19,8 @@ public class ArraysExercise {
         team[2] = new Person("Jordin");
         for (int i = 0; i < team.length; i++) {
             System.out.println(team[i].getName());
+
+
         }
     }
 }
