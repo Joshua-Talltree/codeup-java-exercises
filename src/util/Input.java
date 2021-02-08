@@ -4,19 +4,20 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner;
+    private static Scanner scanner;
+
 
     public Input() {
-        this.scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
     }
 
-    public String getString() {
+    public static String getString() {
         return getString("Please enter a string:");
     }
 
-    public String getString(String prompt) {
+    public static String getString(String prompt) {
         System.out.println(prompt);
-        return this.scanner.nextLine();
+        return scanner.nextLine();
     }
 
     public boolean yesNo() {
@@ -31,13 +32,21 @@ public class Input {
                 answer.toLowerCase().equals("yes"));
     }
 
-    public int getInt() {
+    public static int getInt() {
         return getInt("Please enter an integer: ");
     }
 
-    public int getInt(String prompt) {
+    public static int getInt(String prompt) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println(prompt);
-        return this.scanner.nextInt();
+        int number;
+        try{
+            number = Integer.valueOf(getString());
+            return number;
+        }catch(NumberFormatException nfe) {
+            System.out.println("Wrong input, try again");
+            return getInt(prompt);
+        }
     }
 
     public int getInt(int min, int max) {
@@ -59,7 +68,14 @@ public class Input {
 
     public double getDouble(String prompt) {
         System.out.println(prompt);
-        return this.scanner.nextDouble();
+        Double number;
+        try{
+            number = Double.valueOf(getString());
+            return number;
+        }catch(NumberFormatException nfe) {
+            System.out.println("Wrong input, try again");
+            return getDouble(prompt);
+        }
     }
 
     public double getDouble(double min, double max) {
