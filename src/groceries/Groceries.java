@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 public class Groceries {
 
 
@@ -67,22 +68,39 @@ public class Groceries {
     }
 
     public static void main(String[] args) {
+
         Scanner groceryScanner = new Scanner(System.in);
-        Groceries newGroceries = new Groceries("Tomatoes", "Milk", "Ribeye", "Apples");
-
-        System.out.println("Which item would you like to add to your list: ");
-        String groceryAdder = groceryScanner.nextLine();
-
-
+        System.out.println("What food group are you shopping from: ");
+        System.out.println("1. Meat\n" + "2. Dairy\n" + "3. Vegetables\n" + "4. Fruits ");
         HashMap<String, String> groceryList = new HashMap<>();
-        groceryList.put("Milk ", " dairy");
-        groceryList.put("Carrots ", " vegetables");
-        groceryList.put("Ground beef ", " meat");
-        groceryList.put("Cheese ", " dairy");
-        groceryList.put("Tomatoes ", " vegetables");
-        groceryList.put("Pork chops ", " meat");
 
-        System.out.println(groceryList);
+        for (int i = 0; i < groceryList.size(); i++) {
+
+            String a = groceryScanner.nextLine();
+            String b = groceryScanner.nextLine();
+            System.out.println("How many products do you want");
+            int listOfItem = groceryScanner.nextInt();
+            System.out.println("Type the product name and quantity you want to purchase and get the bill");
+            HashMap<Integer, String> products = new HashMap<>();
+            while (listOfItem -- > 0) {
+                products.put(groceryScanner.nextInt(), groceryScanner.nextLine());
+            }
+            System.out.println(groceryList.get(listOfItem));
+
+            groceryList.put("Milk ", " dairy");
+            groceryList.put("Carrots ", " vegetables");
+            groceryList.put("Ground beef ", " meat");
+            groceryList.put("Cheese ", " dairy");
+            groceryList.put("Tomatoes ", " vegetables");
+            groceryList.put("Pork chops ", " meat");
+        }
     }
-
 }
+
+//for (int i = 0; i < 3; i++) {
+//        Integer a = in.nextInt();
+//        Integer b = in.nextInt();
+//
+//        hmap.put(a, b);
+//
+//        System.out.println(hmap.put(a, b));
