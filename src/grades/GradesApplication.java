@@ -41,10 +41,6 @@ public class GradesApplication {
         usernames.put("paulgisking", newStudent2);
         usernames.put("jimmytwotimes", newStudent3);
         usernames.put("derekiscool", newStudent4);
-//        System.out.println(usernames);
-//        for (String keys : usernames.keySet()) {
-//            Student thisStudent = usernames.get(keys);
-//            System.out.println(thisStudent.getNames());
 
 
 

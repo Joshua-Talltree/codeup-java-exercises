@@ -74,14 +74,14 @@ public class Groceries {
         System.out.println("1. Meat\n" + "2. Dairy\n" + "3. Vegetables\n" + "4. Fruits ");
         HashMap<String, String> groceryList = new HashMap<>();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
 
-        String a = groceryScanner.nextLine();
-        String b = groceryScanner.nextLine();
+        String dairy = groceryScanner.nextLine();
+        String meat = groceryScanner.nextLine();
 
-        groceryList.put(a, b);
+        groceryList.put(dairy, meat);
 
-        System.out.println(groceryList.put(a, b));
+        System.out.println(groceryList.put(dairy, meat));
 
             groceryList.put("Milk ", " dairy");
             groceryList.put("Carrots ", " vegetables");

@@ -25,7 +25,7 @@ public class Student {
         return names;
     }
 
-    // names settor
+    // names setter
     public void setNames(String names) {
         this.names = names;
     }
